@@ -1,4 +1,4 @@
-class Matrix {
+class MatrixStrassen {
   public static void main(String args[])
   {
     if (args.length != 1) {
@@ -24,13 +24,6 @@ class Matrix {
     long begin = System.currentTimeMillis();
 
     // Write code to calculate C = A * B.
-    for (i = 0; i < n; i++) {
-	for (j = 0; j < n; j++) {
-	    for(int k = 0; k < n; k++) {
-		c[i][j] += a[i][k] * b[k][j];
-	    }
-	}
-    }
 
     long end = System.currentTimeMillis();
     System.out.printf("time: %.6f sec\n", (end - begin) / 1000.0);

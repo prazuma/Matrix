@@ -1,4 +1,4 @@
-class Matrix {
+class Matrix2 {
   public static void main(String args[])
   {
     if (args.length != 1) {
@@ -24,9 +24,10 @@ class Matrix {
     long begin = System.currentTimeMillis();
 
     // Write code to calculate C = A * B.
+
     for (i = 0; i < n; i++) {
-	for (j = 0; j < n; j++) {
-	    for(int k = 0; k < n; k++) {
+	for (int k = 0; k < n; k++) {
+	    for(j = 0; j < n; j++) {
 		c[i][j] += a[i][k] * b[k][j];
 	    }
 	}
